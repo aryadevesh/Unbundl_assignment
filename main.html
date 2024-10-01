@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dental Clinic Navbar</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <h1>clove<span>:)</span></h1>
+                <p>DENTAL</p>
+            </div>
+            <ul class="nav-links">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-btn">Treatments</a>
+                    <div class="dropdown-content">
+                        <div class="dropdown-row">
+                            <a href="#">Advance Gum Treatments</a>
+                            <a href="#">Bridges and Crowns</a>
+                            <a href="#">Braces and Aligners</a>
+                        </div>
+                        <div class="dropdown-row">
+                            <a href="#">Clear Aligners</a>
+                            <a href="#">Dental Fillings</a>
+                            <a href="#">Dental Implants</a>
+                        </div>
+                        <div class="dropdown-row">
+                            <a href="#">Dentures</a>
+                            <a href="#">Mouth Ulcers</a>
+                            <a href="#">Kids Dentistry</a>
+                        </div>
+                        <div class="dropdown-row">
+                            <a href="#">Preventive Dentistry</a>
+                            <a href="#">Root Canal Treatments</a>
+                            <a href="#">Smile Makeover</a>
+                        </div>
+                        <div class="dropdown-row">
+                            <a href="#">Teeth Whitening</a>
+                            <a href="#">Wisdom Teeth Removal</a>
+                        </div>
+                        <div class="need-help">
+                            <a href="#">Need help? Call Clove Dental</a>
+                        </div>
+                    </div>
+                </li>
+                <li><a href="#">Dental Plans</a></li>
+                <li><a href="#">Our Doctors</a></li>
+                <li><a href="#">Careers</a></li>
+                <li><a href="#">Find a Clinic</a></li>
+            </ul>
+            <div class="nav-buttons">
+                <a href="#" class="btn book-appointment">Book Appointment</a>
+                <a href="#" id="help-btn" class="btn help">Help ?</a>
+                <div id="help-dropdown" class="dropdown-content">
+                    <div class="help-menu">
+                        <a href="tel:+1234567890">📞 +1 234 567 890</a>
+                        <a href="tel:+0987654321">📞 +0 987 654 321</a>
+                        <a href="mailto:help@example.com">✉️ help@example.com</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="slider">
+                <div class="slide active">
+                    <img src="assets/Frame 52499.png" alt="Dental Clinic" />
+                </div>
+                <div class="slide active">
+                    <img src="assets/Screenshot 2024-10-01 at 11.30.35 PM.png" alt="Happy Patients" />
+                </div>
+            </div>
+        </section>
+
+        <section class="treatment-section">
+            
+            <h2>All dental issues from simple cleaning to full mouth rehabilitation under one roof</h2>
+            <div class="treatment-grid">
+                <div class="treatment-item">
+                    <img src="root-canal-icon.png" alt="Root Canal">
+                    <p>Root Canal Treatment</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="braces-icon.png" alt="Braces">
+                    <p>Braces</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="teeth-whitening-icon.png" alt="Teeth Whitening">
+                    <p>Teeth Whitening</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="invisible-braces-icon.png" alt="Invisible Braces">
+                    <p>Invisible Braces</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="dental-implants-icon.png" alt="Dental Implants">
+                    <p>Dental Implants</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="smile-makeover-icon.png" alt="Smile Makeover">
+                    <p>Smile Makeover</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="kids-dentistry-icon.png" alt="Kids Dentistry">
+                    <p>Kids Dentistry</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="gum-treatment-icon.png" alt="Gum Treatment">
+                    <p>Gum Treatment</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="wisdom-tooth-icon.png" alt="Wisdom Tooth">
+                    <p>Wisdom Tooth</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="laser-dentistry-icon.png" alt="Laser Dentistry">
+                    <p>Laser/Painless Dentistry</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="crowns-bridges-icon.png" alt="Crowns & Bridges">
+                    <p>Crowns & Bridges</p>
+                </div>
+                <div class="treatment-item">
+                    <img src="dentures-icon.png" alt="Dentures">
+                    <p>Dentures</p>
+                </div>
+            </div>
+            <a href="#" class="explore-link">🔍 Explore Treatments →</a>
+        </section>
+
+
+        <section class="consultation-form">
+            <div class="left-panel">
+              <h2>Expert Guidance for Healthy Smiles</h2>
+              <p>Contact Now</p>
+              <form>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" value="Amit Rana" required>
+                
+                <label for="mobile">Mobile Number</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+                
+                <label for="concern">Select Concern</label>
+                <select id="concern" name="concern">
+                  <option value="" disabled selected>Select a concern</option>
+                  <option value="orthodontics">Orthodontics</option>
+                  <option value="whitening">Teeth Whitening</option>
+                  <option value="implants">Implants</option>
+                  <!-- Add more options as needed -->
+                </select>
+                
+                <button type="submit">Book A Free Consultation</button>
+              </form>
+            </div>
+            
+            <div class="right-panel">
+              <div class="safety-protocols">
+                <h2>10x Safety Protocols</h2>
+                <p>Monitored by DORI <br> (Artificial Intelligence System)</p>
+                <a href="#">Learn More &rarr;</a>
+              </div>
+              
+              <div class="info-cards">
+                <div class="card">
+                  <h3>450+ Neighbourhood</h3>
+                  <p>Clinics Pan India</p>
+                  <a href="#">Locate Clinic near you &rarr;</a>
+                </div>
+                
+                <div class="card">
+                  <h3>1200+ Expert Doctors</h3>
+                  <p>Covering All Specialities</p>
+                  <a href="#">Explore Dentists Nearby &rarr;</a>
+                </div>
+              </div>
+            </div>
+          </section>
+                  
+        
+    </header>
+    <script>
+        // JavaScript for Image Sliding
+        let currentIndex = 0;
+        const slides = document.querySelector('.slider');
+        const totalSlides = document.querySelectorAll('.slide').length;
+
+        function slideImages() {
+            currentIndex = (currentIndex + 1) % totalSlides;
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`; // Slide based on index
+        }
+
+        // Set interval for automatic sliding every 3 seconds
+        setInterval(slideImages, 5000);
+    </script>
+
+    <script>
+        // JavaScript for toggling the dropdown
+        document.querySelector('.dropdown-btn').addEventListener('click', function(e) {
+            e.preventDefault();
+            const dropdownContent = document.querySelector('.dropdown-content');
+            dropdownContent.classList.toggle('show');
+        });
+
+        // Close the dropdown if clicked outside
+        window.addEventListener('click', function(e) {
+            if (!e.target.matches('.dropdown-btn')) {
+                const dropdowns = document.querySelectorAll('.dropdown-content');
+                dropdowns.forEach(dropdown => {
+                    if (dropdown.classList.contains('show')) {
+                        dropdown.classList.remove('show');
+                    }
+                });
+            }
+        });
+    </script>
+    
+    
+</body>
+</html>
