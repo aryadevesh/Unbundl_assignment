@@ -248,7 +248,14 @@ body {
   font-size: 1.2rem;
   font-weight: 400;
 }
-
+.arrow-cls{
+  margin-top: 1rem;
+  height: 1rem;
+  width: auto;
+}
+.for-arrow{
+  display: flex;
+}
 .orange-text {
   color: rgba(234, 125, 40, 1);
 }
@@ -316,9 +323,7 @@ body {
   margin-left: 1rem;
   width: 17rem;
 }
-.ml-1 :hover{
-  cursor:pointer;
-}
+
  .city-button {
   position: relative;
   display: flex;
@@ -332,6 +337,7 @@ body {
   border-radius: 2rem;
   color: rgba(160, 160, 160, 1);
   border: 1px solid rgba(176, 176, 176, 1);
+  width: 16rem;
 }
 
 .city-button p {
@@ -345,6 +351,7 @@ body {
 }
 
 .city-options {
+  visibility: collapse;
   position: absolute;
   width: 15rem;
   top: 110%;
@@ -354,7 +361,7 @@ body {
   border: 1px solid rgba(176, 176, 176, 1);
   border-radius: 1rem;
   height: auto;
-  display: none;
+  
 }
 
 .city-options-div {
@@ -999,8 +1006,9 @@ section.consultation-form {
 }
 
 .show{
-  display: flex;
+  visibility: visible;
 }
+
 .blog-details h3 {
     font-size: 1rem;
     color: #333;
@@ -1020,6 +1028,9 @@ section.consultation-form {
     
 }
 
+.need-btn:hover{
+  cursor: pointer;
+}
 .need-btn {
     font-size: 1rem;
     padding: 1rem 2rem;
@@ -1036,7 +1047,10 @@ section.consultation-form {
   justify-content: center;
   margin-right: 4rem;
   padding-left: 1rem;
-
+}
+.need-btn-div:hover .contact-card{
+  cursor: pointer;
+  display: block;
 }
 .need-btn-div .arrow-up {
   margin-right: -3.5rem;
@@ -1049,25 +1063,37 @@ section.consultation-form {
   align-items: center;
   gap: 1rem;
 }
+
+.nav-buttons img:hover{
+  cursor: pointer;
+}
 .nav-buttons img{
   width: 12.5rem;
   height: 3.3rem;
-
 }
+/* .nav-buttons :hover{
+  cursor: pointer;
+} */
 
 .contact-card {
+  visibility: collapse;
+  position: absolute;
+  right: 4rem;
+  top: 6rem;
   background-color: #fdf3ec;
-  padding: 20px;
-  border-radius: 15px;
-  width: 280px;
-  font-family: Arial, sans-serif;
+  padding: 1.6rem;
+  border-radius: 1rem;
+  width: 22rem;
 }
 
+.show1{
+  visibility: visible;
+}
 .contact-item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 20px;
+  margin-bottom: 1.6rem;
 }
 
 .contact-info {
@@ -1079,7 +1105,7 @@ section.consultation-form {
   font-size: 1rem;
   font-weight: bold;
   color: #444;
-  margin-bottom: 5px;
+  margin-bottom: 0.4rem;
 }
 
 .contact-number {
@@ -1095,7 +1121,7 @@ section.consultation-form {
 .divider {
   border: none;
   border-bottom: 1px solid #f18726;
-  margin-bottom: 20px;
+  margin-bottom: 1.6rem;
 }
 
 
