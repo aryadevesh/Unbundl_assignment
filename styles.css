@@ -21,6 +21,7 @@ body {
     top: 0;
     left: 0;
     width: 100vw;
+    height: 5.5rem;
     z-index: 1000;
     padding: 1rem;
     display: flex;
@@ -64,7 +65,7 @@ body {
 .logo img{
   margin-left: 4rem;
   width: 8rem;
-  height: 4.5rem;
+  height: 4.3rem;
 }
 
 .nav-links {
@@ -111,6 +112,7 @@ body {
   border-radius: 2rem;
 }
 
+
 .dropdown-column {
   display: flex;
   flex-direction: column;
@@ -132,9 +134,18 @@ body {
   height: fit-content;
   margin-top: 1.2rem;
   margin-left: 1rem;
-  
 }
+
+
 /* Need Help */
+
+.ai img{
+  height: 5rem;
+  width: 5rem;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+}
 
 .hero {
     width: 90rem;
@@ -304,7 +315,11 @@ body {
 }
 
 /* Select city button with dropdonw */
+.ml-1 :hover{
+  cursor:pointer;
+}
 .city-button {
+  display: none;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -1007,15 +1022,32 @@ section.consultation-form {
     justify-content: right;
     gap: 1rem;
     margin-top: 2.4rem;
+    
 }
 
 .need-btn {
     font-size: 1rem;
     padding: 1rem 2rem;
     color: #4D2C19;
-    border: 2px solid #FBBE9C;
-    border-radius: 2rem;
+    border: none;
     background: transparent;
+    margin-right: 1rem;
+    margin-left: 2rem;
+}
+.need-btn-div{
+  border: 2px solid #FBBE9C;
+  border-radius: 2rem;
+  display: flex;
+  justify-content: center;
+  margin-right: 4rem;
+  padding-left: 1rem;
+
+}
+.need-btn-div .arrow-up {
+  margin-right: -3.5rem;
+  margin-top: .6rem;
+  height: 1.8rem;
+  width: 2rem;
 }
 .nav-buttons{
   display: flex;
@@ -1023,8 +1055,9 @@ section.consultation-form {
   gap: 1rem;
 }
 .nav-buttons img{
-  width: 11rem;
-  height: 3.5rem;
+  width: 12.5rem;
+  height: 3.3rem;
+
 }
 
 .explore-more {

@@ -92,13 +92,23 @@
                 <li><a href="#">Careers</a></li>
                 <li><a href="#">Find a Clinic</a></li>
             </ul>
-
-                        <!-- Treatments Dropdown -->
+                       
             <div class="nav-buttons">
                 <img class="book-appointment-button" src="assets/Frame 52400.png">
-                <button class="need-btn">Need Help</button>
+               
+                <div class="need-btn-div">
+                  <img class="arrow-up" src="assets/Get a Call Back.png">
+                  <button class="need-btn"> Help ? 
+                  </button>
+                  
+                </div>
+                
+                
             </div>
         </nav>
+        <div class="ai">
+          <img src="assets/Group 51330.png">
+        </div>
         <!-- Hero Section -->
         <section class="hero">
             <div class="slider">
@@ -781,6 +791,12 @@
           modal.style.display = 'none';
          }
         });
+
+        const cityButton =  document.querySelector('.city-button');
+        const cityOptions = document.querySelector('.city-options');
+        cityButton.addEventListener('click', function(){
+          cityOptions.classList.toggle('show')
+        })
     </script>
 
 
