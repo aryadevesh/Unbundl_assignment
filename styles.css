@@ -301,10 +301,7 @@ body {
   margin-right: 0.5rem;
 }
 
-.ml-1 {
-  margin-left: 1rem;
-  width: 17rem;
-}
+
 
 .full-button {
   width: 100%;
@@ -315,11 +312,14 @@ body {
 }
 
 /* Select city button with dropdonw */
+.ml-1 {
+  margin-left: 1rem;
+  width: 17rem;
+}
 .ml-1 :hover{
   cursor:pointer;
 }
-.city-button {
-  display: none;
+ .city-button {
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -387,13 +387,9 @@ body {
   color: white;
   border:none;
 }
-
-
 .active {
     opacity: 1;
 }
-
-
 
 .book-appointment-modal {
   display: none;
@@ -494,9 +490,6 @@ body {
   margin-top: 1rem;
   background-color: rgba(248, 148, 63, 1);
 }
-
-
-
 
 
 .treatments{
@@ -1005,7 +998,9 @@ section.consultation-form {
   flex-grow: 1; /* Allow text to take up remaining space */
 }
 
-
+.show{
+  display: flex;
+}
 .blog-details h3 {
     font-size: 1rem;
     color: #333;
@@ -1059,6 +1054,55 @@ section.consultation-form {
   height: 3.3rem;
 
 }
+
+.contact-card {
+  background-color: #fdf3ec;
+  padding: 20px;
+  border-radius: 15px;
+  width: 280px;
+  font-family: Arial, sans-serif;
+}
+
+.contact-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.location {
+  font-size: 1rem;
+  font-weight: bold;
+  color: #444;
+  margin-bottom: 5px;
+}
+
+.contact-number {
+  font-size: 0.9rem;
+  color: #333;
+}
+
+.contact-icon img {
+  width: 24px;
+  height: 24px;
+}
+
+.divider {
+  border: none;
+  border-bottom: 1px solid #f18726;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
 
 .explore-more {
     text-align: center;
